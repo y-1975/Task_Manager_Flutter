@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager_flutter/Widgets/task_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor:Colors.indigo,
 
-        title: Text(widget.title),
+        title: Text('Tasks'),
       ),
-      body: Container()
+      body: TaskWidget()
     );
   }
 }
